@@ -99,7 +99,7 @@ try {
                 <td>{$row['pan_number']}</td>
                 <td><img src='{$row['photo_path']}' height='50' width='50'></td>
                 <td>
-                   <button class='Insert'> <a href='form.html'>Insert </a> </button>
+                   <button class='Insert'> <a href='index.html'>Insert </a> </button>
                    <button class='Edit'> <a href='edit.php?id={$row['id']}'>Edit</a></button>
                     <button class ='Delete'> <a href='delete.php?id={$row['id']}'>Delete</a></button>
                 </td>
