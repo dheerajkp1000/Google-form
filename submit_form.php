@@ -6,13 +6,11 @@ $password = "";
 $dbname = "employee_db";
 
 try {
-    // Create a PDO instance
     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
     
-    // Set PDO error mode to exception
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    // Check if form is submitted
+    
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // Prepare SQL statement for inserting data
         $sql = "INSERT INTO employee_data (full_name, contact_number, emergency_contact, dob_adhar, father_name, joining_date, original_dob, work_location, designation, personal_email, salary_ctc, married, spouse_details, children_details, pan_number, aadhaar_number, uan_number, bank_name, bank_account_number, ifsc_code, aadhaar_address, current_address, blood_group, work_experience, previous_org, last_ctc, family_contacts, reference_contacts, photo_path) 
@@ -57,10 +55,7 @@ try {
         $photo_path = $target_file;
         move_uploaded_file($_FILES["photo"]["tmp_name"], $target_file);
         
-        // Execute statement
         $stmt->execute();
-        
-        // Redirect to avoid form resubmission
         header("Location: " . $_SERVER['PHP_SELF']);
         exit();
     }
