@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <title>Joining Form</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Joining Form</h2>
+        <form action="submit_form.php" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="full_name">Full Name *</label>
+                <input type="text" id="full_name" name="full_name" required>
+            </div>
+            <div class="form-group">
+                <label for="contact_number">Contact Number *</label>
+                <input type="text" id="contact_number" name="contact_number" required>
+            </div>
+            <div class="form-group">
+                <label for="emergency_contact">Emergency Contact No. *</label>
+                <input type="text" id="emergency_contact" name="emergency_contact" required>
+            </div>
+            <div class="form-group">
+                <label for="dob_adhar">Date of Birth (as per Aadhar Card) *</label>
+                <input type="date" id="dob_adhar" name="dob_adhar" required>
+            </div>
+            <div class="form-group">
+                <label for="father_name">Father's Name (as per Aadhar Card) *</label>
+                <input type="text" id="father_name" name="father_name" required>
+            </div>
+            <div class="form-group">
+                <label for="joining_date">Date of Joining *</label>
+                <input type="date" id="joining_date" name="joining_date" required>
+            </div>
+            <div class="form-group">
+                <label for="original_dob">Original Birthday Date *</label>
+                <input type="date" id="original_dob" name="original_dob" required>
+            </div>
+            <div class="form-group">
+                <label for="work_location">Work Location *</label>
+                <input type="text" id="work_location" name="work_location" required>
+            </div>
+            <div class="form-group">
+                <label for="designation">Designation *</label>
+                <input type="text" id="designation" name="designation" required>
+            </div>
+            <div class="form-group">
+                <label for="personal_email">Personal Email ID *</label>
+                <input type="email" id="personal_email" name="personal_email" required>
+            </div>
+            <div class="form-group">
+                <label for="salary_ctc">Salary Offered (CTC) *</label>
+                <input type="number" id="salary_ctc" name="salary_ctc" required>
+            </div>
+            <div class="form-group">
+                <label for="married">Married *</label>
+                <select id="married" name="married" required>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="spouse_details">Spouse Name and Date of Birth (if Married) *</label>
+                <textarea id="spouse_details" name="spouse_details" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="children_details">Children (Names and D.O.B. as per Aadhar, if any) *</label>
+                <textarea id="children_details" name="children_details" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="pan_number">Pan Number *</label>
+                <input type="text" id="pan_number" name="pan_number" required>
+            </div>
+            <div class="form-group">
+                <label for="aadhaar_number">Aadhaar Number *</label>
+                <input type="text" id="aadhaar_number" name="aadhaar_number" required>
+            </div>
+            <div class="form-group">
+                <label for="uan_number">UAN Number *</label>
+                <input type="text" id="uan_number" name="uan_number" required>
+            </div>
+            <div class="form-group">
+                <label for="bank_name">Bank Name *</label>
+                <input type="text" id="bank_name" name="bank_name" required>
+            </div>
+            <div class="form-group">
+                <label for="bank_account_number">Bank Account Number *</label>
+                <input type="text" id="bank_account_number" name="bank_account_number" required>
+            </div>
+            <div class="form-group">
+                <label for="ifsc_code">IFSC Code *</label>
+                <input type="text" id="ifsc_code" name="ifsc_code" required>
+            </div>
+            <div class="form-group">
+                <label for="aadhaar_address">Address in Aadhaar Card *</label>
+                <textarea id="aadhaar_address" name="aadhaar_address" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="current_address">Current Address with Pin code (if different from Aadhaar card) *</label>
+                <textarea id="current_address" name="current_address" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="blood_group">Blood Group *</label>
+                <input type="text" id="blood_group" name="blood_group" required>
+            </div>
+            <div class="form-group">
+                <label for="work_experience">Total Work Experience *</label>
+                <input type="number" id="work_experience" name="work_experience" required>
+            </div>
+            <div class="form-group">
+                <label for="previous_org">Previous Organization Name *</label>
+                <input type="text" id="previous_org" name="previous_org" required>
+            </div>
+            <div class="form-group">
+                <label for="last_ctc">Last CTC *</label>
+                <input type="number" id="last_ctc" name="last_ctc" required>
+            </div>
+            <div class="form-group">
+                <label for="family_contacts">Three immediate family members contact details (Name/Contact Numbers/Relation) for Emergency *</label>
+                <textarea id="family_contacts" name="family_contacts" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="reference_contacts">Three reference contact details (Name/Contact Numbers/Designation and Email ID) from your last Organization. (HR DETAILS ARE A MUST) *</label>
+                <textarea id="reference_contacts" name="reference_contacts" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="photo">Passport Size Photo *</label>
+                <input type="file" id="photo" name="photo" required>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
